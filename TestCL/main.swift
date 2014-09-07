@@ -26,9 +26,8 @@ for i in 1...5 {
 
 CLH.renameFileWithName("test1.txt", toName: "testOne.txt")
 
-// Change the names of files
 for (i, file) in enumerate(CLH.contentsOfDirectoryAtPath(testPath)) {
-    println(file)
+    println("\(i): \(file)")
 }
 
 
